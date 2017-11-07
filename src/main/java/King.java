@@ -7,10 +7,9 @@ public class King extends Character {
 
     @Override
     void kick(Character c) {
-        if (getHp() < 10) {
-            kickBehaviour.kick(this, c);
-        } else {
+        if (getHp() > 10) {
             kickBehaviour = (c1, c2) -> c2.setHp(0);
         }
+        kickBehaviour.kick(this, c);
     }
 }
