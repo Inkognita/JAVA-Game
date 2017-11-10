@@ -4,11 +4,10 @@ import java.util.Random;
 
 public class GameManager {
     public void fight(Character c1, Character c2) {
-        if (c1.getClass().equals(c2.getClass())) {
-            if (c1.getClass().equals(Hobbit.class) || c2.getClass().equals(Elf.class)) {
-                System.out.println("Both enemies are safe for each other");
-                return;
-            }
+        if (c1.getClass().equals(c2.getClass()) &&
+                (c1.getClass().equals(Hobbit.class) || c2.getClass().equals(Elf.class))) {
+            System.out.println("Both enemies are safe for each other");
+            return;
         }
         System.out.println("The battle has started!");
         int temp_hp = 0;
