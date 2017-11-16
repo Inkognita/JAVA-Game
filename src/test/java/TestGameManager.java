@@ -1,9 +1,10 @@
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class TestGameManager {
     @Test
-    public void testElfs(){
+    public void testElfs() {
         Elf a = new Elf();
         Elf b = new Elf();
         new GameManager().fight(a, b);
@@ -12,7 +13,7 @@ public class TestGameManager {
     }
 
     @Test
-    public void testHobbits(){
+    public void testHobbits() {
         Hobbit a = new Hobbit();
         Hobbit b = new Hobbit();
         new GameManager().fight(a, b);
@@ -21,7 +22,7 @@ public class TestGameManager {
     }
 
     @Test
-    public void testKings(){
+    public void testKings() {
         King a = new King();
         King b = new King();
         new GameManager().fight(a, b);

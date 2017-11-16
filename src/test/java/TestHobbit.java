@@ -1,9 +1,10 @@
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class TestHobbit {
     @Test
-    public void testInitialisation(){
+    public void testInitialisation() {
         Hobbit hobbit = new Hobbit();
         assertEquals(3, hobbit.getHp());
         assertEquals(0, hobbit.getPower());
@@ -13,7 +14,7 @@ public class TestHobbit {
     }
 
     @Test
-    public void testKick(){
+    public void testKick() {
         Hobbit hobbit = new Hobbit();
         Hobbit kickHobbit = new Hobbit();
         hobbit.kick(kickHobbit);
