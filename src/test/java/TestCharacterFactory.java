@@ -12,6 +12,8 @@ public class TestCharacterFactory {
         CharacterFactory characterFactory = new CharacterFactory();
         List<Class> arr = new ArrayList<>(Arrays.asList(Hobbit.class, Knight.class, King.class, Elf.class));
         for (int i = 0; i < 25; i++) {
-            assertEquals(true,arr.contains(characterFactory.createCharacter().getClass()));}
+            Character res = characterFactory.createCharacter();
+            if (res != null){
+            assertEquals(true,arr.contains(res.getClass()));}}
     }
 }
